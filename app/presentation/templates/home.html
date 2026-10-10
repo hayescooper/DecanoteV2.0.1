@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decanote</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+  <main>
+    <h1>Decanote</h1>
+    <p class="hint">Chọn một thư mục chứa nhiều file. Hệ thống tự chia thành nhóm {{ chunk_size }} file/lượt để audit.</p>
+
+    <!-- webkitdirectory and directory enable folder selection -->
+    <input type="file" id="files" webkitdirectory directory multiple>
+    <button id="btn-scan">Quét</button>
+    <span id="status"></span>
+
+    <div id="export" hidden>
+      <button data-fmt="xlsx">Xuất Excel</button>
+      <button data-fmt="docx">Xuất Word</button>
+    </div>
+
+    <pre id="result"></pre>
+  </main>
+  <script src="{{ url_for('static', filename='home.js') }}"></script>
+</body>
+</html>
