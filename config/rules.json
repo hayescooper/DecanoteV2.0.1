@@ -2,5 +2,5 @@
   "chunk_size": 20,
   "max_file_bytes": 200000,
   "allowed_extensions": [".py", ".js", ".ts", ".java", ".cs", ".html", ".css", ".json", ".md", ".txt", ".sql", ".docx", "xlsx", ".pptx", ".csv", ".yml", ".yaml", ".xml"],
-  "audit_prompt": "you are an assistant. Locate the prompt.txt file for further instructions. If you cannot find it, simply tell user."
+  "audit_prompt": "you are an assistant. Locate the prompt file for further instructions. If you cannot find it, simply tell user."
 }
